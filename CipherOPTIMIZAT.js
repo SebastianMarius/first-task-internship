@@ -5,7 +5,7 @@ function EncryptIt(){
 "Q", "R",  "S", "T", "U", "V",  "W", "X", "Y", "Z",  "0", "1",  "2", "3", "4", "5", "6", "7",  
 "8", "9", ".", ",", "?", "!", "'", "_", "-", "&", "@", "#", "$", "%", "*", "(", ")", " "];
 
-		console.log(characters.length);
+	
 
 	
 		let userText=document.getElementById("userMsg").value.toUpperCase();
@@ -30,12 +30,14 @@ function EncryptIt(){
 			// console.log(characters.indexOf(charArrayUsrTxt[i]) + characters.indexOf(charArrayUsrKEY[keyIndex]));
 			indexOfSum=characters.indexOf(charArrayUsrTxt[i]) + characters.indexOf(charArrayUsrKEY[keyIndex]);
 
-			if(indexOfSum>characters.length){
+			if(indexOfSum>=characters.length){
 				indexOfSum=indexOfSum-characters.length;
+				
 			}
 
 			indexOfResult=indexOfResult+ characters[indexOfSum];
-			console.log(indexOfResult); 
+			console.log(indexOfResult);
+			
 			keyIndex++;
 
 		}
