@@ -1,0 +1,43 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.everything{
+	padding: 0px;
+	background-color: red;
+	color: red;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.appTitle{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 60%;
+	background-color: green;
+
+
+}
+
+.textTest{
+	background-color: blue;
+	align-self: center;
+
+}
+
+.itemsAlign{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.msgInput{
+	height: 10%;
+}
+
+.buttonCypher{
+	width: 30%;
+}
