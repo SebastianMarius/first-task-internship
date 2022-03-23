@@ -1,43 +1,130 @@
 body{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 .everything{
 	padding: 0px;
-	background-color: red;
-	color: red;
+	opacity: 0.9;
+	background-image: url("ceva.jpg");
+	object-fit: contain;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.appTitle{
+.app-card{
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(58, 56, 69, 0.3);
 	display: flex;
 	flex-direction: column;
 	width: 60%;
-	height: 60%;
-	background-color: green;
-
+	height: 70%;
+	background: linear-gradient(to right top,rgba(178, 177, 185,0.7), rgba(89, 82, 96,0.8));
 
 }
 
-.textTest{
-	background-color: blue;
+.cypher-title{
 	align-self: center;
+	font-size: 40px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 800;
+	height: 2%;
+	padding-bottom: 2%;
 
 }
 
-.itemsAlign{
+form{
+	height: 100%;
+}
+
+.user-msg-section{
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.user-key-section{
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.decrypted-msg-section{
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1%;
+}
+
+.items-align{
 	margin-left: 5%;
 	margin-right: 5%;
 }
 
-.msgInput{
+.msg-input{
+	height: 90%;
+	vertical-align: text-top;
+	border-radius: 5px;
+	font-size: 15px;
+	/* margin-left: 15%; */
+	/* margin-right: 5%; */
+	margin-top: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	
+}
+
+.button-cypher{
+	min-width: 130px;
+	height: 40px;
+	width: 10%;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: 2px solid #495057;
+	background: #495057;
+	border-radius: 15px;
+	
+}
+
+.button-cypher:hover{
+	background: #fff;
+	color: #adb5bd
+
+}
+
+
+.textarea-text{
+	font-size: 25px;
+	font-weight: 550;
+	font-family: 'Courier New', Courier, monospace;
+	margin-bottom: 15px;
 	height: 10%;
 }
 
-.buttonCypher{
-	width: 30%;
+textarea:focus{
+	outline: none ;
+    border:3px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.buttons-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+
 }

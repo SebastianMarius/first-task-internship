@@ -12,22 +12,36 @@
 
 	<div class="everything">
 
-		<div class="appTitle">
+		<div class="app-card">
 
-			<p class="textTest">Cipher</p>
-			 	 <label for="fname" class="itemsAlign">Enter your message here:</label>
- 				 <input type="text" name="fname" class=" msgInput itemsAlign" id="userMsg"><br><br>
+			<p class="cypher-title">Cipher</p>
+			
+		<form >
+			<div class="user-msg-section">
+			 	 <label for="fname" class="items-align textarea-text">Enter your message here:</label>
+ 				 <textarea  type="text" name="fname" class="msg-input items-align" id="user-msg" required></textarea>
+				  <br><br> 
+			</div>
 
- 				 <label for="fname" class="itemsAlign">Enter secret code:</label>
- 				 <input type="text" name="fname" class=" msgInput itemsAlign" id="userSecretKey" ><br><br>
+			<div class="user-key-section">
+ 				 <label for="fname" class="items-align textarea-text">Enter secret code:</label>
+ 				 <textarea type="text" name="fname" class="msg-input items-align" id="user-secret-Key" required></textarea> <br><br>
+			</div>
 
- 				 <button type="button" class="buttonCypher" onclick="EncryptIt()" >Encrypt!</button>
- 				 <button type="button" class="buttonCypher" onclick="decrypt()" >dec!</button>
+				<div class="buttons-section">
+ 					 <button type="button" class="button-cypher" onclick="EncryptIt()" >Encrypt!</button>
+ 				 	 <button type="button" class="button-cypher" onclick="decrypt()" >Decrypt!</button>
+				</div>
 
- 				  <label for="fname" class="itemsAlign test">Your decrypted msg:</label>
- 				 <input type="text" name="fname" class=" msgInput itemsAlign" ><br><br>
- 				 <h1 class="test" id="test">TESTTT</h1>
-
+			<div class="decrypted-msg-section">
+ 				  <label for="fname" class="items-align textarea-text">Your decrypted msg:</label>
+ 				 <textarea type="text" name="fname" class="msg-input items-align" id="decrypted-input" readonly></textarea><br><br> 
+ 				 <!-- <h1 class="test" id="test">TESTTT</h1> -->
+				
+			</div>
+		</form>
+		
+			
 		</div>
 
 
